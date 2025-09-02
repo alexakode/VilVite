@@ -2,6 +2,7 @@ import "./style.css";
 import javascriptLogo from "./javascript.svg";
 import viteLogo from "/vite.svg";
 import { setupCounter } from "./counter.js";
+import { passwordForm } from "./passwordForm.js";
 
 document.querySelector("#app").innerHTML = `
   <div>
@@ -13,7 +14,7 @@ document.querySelector("#app").innerHTML = `
     </a>
     <h1>Hello Vite!</h1>
     <form id="myLoginForm">
-      <input type="text" placeholder="Enter your name" />
+      <input type="text" name="email" placeholder="Enter your email" />
       <input type="password" name="password" id="password" placeholder="Enter your password" />
       <button type="submit">Login</button>
     </form>
@@ -26,5 +27,8 @@ document.querySelector("#app").innerHTML = `
     </p>
   </div>
 `;
+passwordForm;
 generateUUIDButton(document.querySelector("#app"));
 setupCounter(document.querySelector("#counter"));
+passwordForm(document.querySelector("#myLoginForm"));
+generateUUIDButton(document.querySelector("#generate-uuid"));
