@@ -12,6 +12,11 @@ document.querySelector("#app").innerHTML = `
       <img src="${javascriptLogo}" class="logo vanilla" alt="JavaScript logo" />
     </a>
     <h1>Hello Vite!</h1>
+    <form id="myLoginForm">
+      <input type="text" placeholder="Enter your name" />
+      <input type="password" name="password" id="password" placeholder="Enter your password" />
+      <button type="submit">Login</button>
+    </form>
     <div class="card">
       <button id="counter" type="button"></button>
       <button id="generate-uuid" type="button">Generate UUID</button>
